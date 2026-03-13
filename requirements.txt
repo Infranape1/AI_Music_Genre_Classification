@@ -1,0 +1,8 @@
+gradio
+tensorflow-cpu
+librosa
+numpy
+scikit-learn
+matplotlib
+soundfile
+reportlab

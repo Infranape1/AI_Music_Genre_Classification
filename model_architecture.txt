@@ -1,0 +1,36 @@
+AI Music Genre Classifier – CNN Architecture
+
+Input: MFCC (130 x 13 x 1)
+
+Layer 1:
+Conv2D (32 filters, 3x3) + ReLU
+BatchNormalization
+MaxPooling2D (3x3)
+
+Layer 2:
+Conv2D (32 filters, 3x3) + ReLU
+BatchNormalization
+MaxPooling2D (3x3)
+
+Layer 3:
+Conv2D (32 filters, 2x2) + ReLU
+BatchNormalization
+MaxPooling2D (2x2)
+
+Flatten
+
+Dense (64 neurons) + ReLU
+Dropout (0.3)
+
+Output Layer:
+Dense (10 neurons) + Softmax
+
+Loss Function:
+Categorical Crossentropy
+
+Optimizer:
+Adam
+
+Evaluation Metrics:
+Accuracy
+F1 Score
